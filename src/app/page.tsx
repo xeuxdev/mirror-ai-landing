@@ -10,7 +10,7 @@ import { TeamSection } from "@/components/team";
 export default function Home() {
   return (
     <Loader>
-      <div className="max-w-screen-2xl mx-auto w-full">
+      <div className="max-w-screen-2xl mx-auto w-full overflow-x-clip">
         {/* navbar */}
 
         <Navbar />
