@@ -1,10 +1,18 @@
+"use client";
+
 import React from "react";
+import { motion } from "framer-motion";
 
 export function Products() {
   return (
     <>
       <div>
-        <div style={{ opacity: 1, transform: "none", willChange: "auto" }}>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+        >
           <div className="z-10 flex min-h-8  items-center justify-center">
             <div className="group rounded-full border border-[#404040] bg-[#171717] text-base text-[#D4D4D4] transition-all ease-in hover:cursor-pointer hover:bg-neutral-200 dark:border-white/5 dark:bg-neutral-900 dark:hover:bg-neutral-800">
               <p
@@ -15,13 +23,16 @@ export function Products() {
               </p>
             </div>
           </div>
-        </div>
-        <div
+        </motion.div>
+        <motion.div
           className="header-text text-center md:text-5xl text-4xl font-semibold flex-wrap mx-auto max-w-[450px] pt-8 pb-10 leading-none px-8 sm:px-0"
-          style={{ opacity: 1, transform: "none", willChange: "auto" }}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.1 }}
         >
           Unleash the power of one click AI
-        </div>
+        </motion.div>
       </div>
 
       <div className="relative flex flex-col max-w-screen-2xl mx-auto w-11/12 items-center justify-center overflow-hidden bg-black ">
@@ -29,9 +40,12 @@ export function Products() {
 
         <div className="flex flex-col items-center justify-center gap-y-14 max-w-screen-2xl mx-auto">
           <div className="grid w-11/12 grid-cols-1 md:grid-cols-6 gap-x-10 gap-y-12 md:w-full overflow-hidden">
-            <div
+            <motion.div
               className="col-span-3 md:col-span-2  border-card box-grad w-full py-4 flex flex-col gap-y-2"
-              style={{ opacity: 1, transform: "none", willChange: "auto" }}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.2 }}
             >
               <img
                 alt="alt"
@@ -43,9 +57,12 @@ export function Products() {
                 className="py-2 w-full h-60"
                 src="/media/ImmerseinAILLMTraining.e22a1760.svg"
               />
-              <div
+              <motion.div
                 className="w-5/6 mx-auto flex flex-col gap-y-2"
-                style={{ opacity: 1, transform: "none", willChange: "auto" }}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.3 }}
               >
                 <h6 className="text-[#FCFCFC]  md:text-xl not-italic leading-8 font-semibold">
                   Immerse in AI/LLM Training
@@ -54,11 +71,14 @@ export function Products() {
                   Unlock the full potential of AI with our advanced training
                   platforms.
                 </p>
-              </div>
-            </div>
-            <div
+              </motion.div>
+            </motion.div>
+            <motion.div
               className="col-span-3 md:col-span-2  box-grad border-card w-full py-4 flex flex-col gap-y-2"
-              style={{ opacity: 1, transform: "none", willChange: "auto" }}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.2 }}
             >
               <img
                 alt="alt"
@@ -70,9 +90,12 @@ export function Products() {
                 className="py-2 w-full md:h-60 "
                 src="/media/DestraExclusiveAIModels.7cc320b9.svg"
               />
-              <div
+              <motion.div
                 className="w-5/6 mx-auto flex flex-col gap-y-2"
-                style={{ opacity: 1, transform: "none", willChange: "auto" }}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.3 }}
               >
                 <h6 className="text-[#FCFCFC]  md:text-xl not-italic leading-8 font-semibold">
                   Destra Exclusive AI Models
@@ -81,11 +104,14 @@ export function Products() {
                   Harness the power of AI with our proprietary, cutting-edge
                   models.
                 </p>
-              </div>
-            </div>
-            <div
+              </motion.div>
+            </motion.div>
+            <motion.div
               className="col-span-3 md:col-span-2  box-grad border-card w-full py-4 flex flex-col gap-y-2"
-              style={{ opacity: 1, transform: "none", willChange: "auto" }}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.2 }}
             >
               <img
                 alt="alt"
@@ -97,9 +123,12 @@ export function Products() {
                 className="py-2 px-4 w-full h-60"
                 src="/media/OneClickAniamation.748b32e1.svg"
               />
-              <div
+              <motion.div
                 className="w-5/6 mx-auto flex flex-col gap-y-2"
-                style={{ opacity: 1, transform: "none", willChange: "auto" }}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.3 }}
               >
                 <h6 className="text-[#FCFCFC]  md:text-xl not-italic leading-8 font-semibold">
                   One-Click AI Deployment
@@ -108,15 +137,21 @@ export function Products() {
                   Deploy AI solutions effortlessly with our intuitive one-click
                   system.
                 </p>
-              </div>
-            </div>
-            <div
+              </motion.div>
+            </motion.div>
+            <motion.div
               className="col-span-3  box-grad border-card w-full py-4 flex flex-col-reverse md:flex-col gap-y-2 overflow-hidden"
-              style={{ opacity: 1, transform: "none", willChange: "auto" }}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.2 }}
             >
-              <div
+              <motion.div
                 className="w-5/6 mx-auto md:text-center flex flex-col md:items-center gap-y-2"
-                style={{ opacity: 1, transform: "none", willChange: "auto" }}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.3 }}
               >
                 <h6 className="text-[#FCFCFC]  md:text-xl not-italic leading-8 font-semibold">
                   D- Rigs
@@ -125,7 +160,7 @@ export function Products() {
                   Enhance performance and efficiency using our innovative
                   D-Rings.
                 </p>
-              </div>
+              </motion.div>
               <div className="w-full md:h-72">
                 <img
                   alt="alt"
@@ -138,14 +173,20 @@ export function Products() {
                   src="/media/D-Rigs.a7a5b02c.svg"
                 />
               </div>
-            </div>
-            <div
+            </motion.div>
+            <motion.div
               className="col-span-3 box-grad border-card w-full py-4 flex flex-col-reverse md:flex-col gap-y-2 overflow-hidden"
-              style={{ opacity: 1, willChange: "auto", transform: "none" }}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.2 }}
             >
-              <div
+              <motion.div
                 className="w-5/6 mx-auto md:text-center flex flex-col md:items-center  gap-y-2"
-                style={{ opacity: 1, transform: "none", willChange: "auto" }}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.3 }}
               >
                 <h6 className="text-[#FCFCFC]  md:text-xl not-italic leading-8 font-semibold">
                   Destra Nodes
@@ -153,7 +194,7 @@ export function Products() {
                 <p className="text-[#D4D4D4] text-sm not-italic font-normal leading-5 md:w-1/2">
                   Live Stats GPU Nodes across Destra Network.
                 </p>
-              </div>
+              </motion.div>
               <div className="w-full md:h-72">
                 <img
                   alt="alt"
@@ -399,14 +440,19 @@ export function Products() {
                   </svg>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
 
         {/* cloud */}
 
         <div className="flex flex-col w-full items-center sm:gap-y-8 py-20 sm:py-[160px] h-full max-w-screen-2xl mx-auto">
-          <div style={{ opacity: 1, transform: "none", willChange: "auto" }}>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+          >
             <div className="z-10 flex min-h-8 items-center justify-center">
               <div className="group rounded-full border border-[#404040] bg-[#171717] text-base text-[#D4D4D4] transition-all ease-in hover:cursor-pointer hover:bg-neutral-200 dark:border-white/5 dark:bg-neutral-900 dark:hover:bg-neutral-800">
                 <p
@@ -417,21 +463,27 @@ export function Products() {
                 </p>
               </div>
             </div>
-          </div>
+          </motion.div>
           <div className="flex flex-col items-center text-center mt-8 sm:mt-0 px-8 sm:px-0">
-            <h4
+            <motion.h4
               className="text-4xl md:text-5xl font-semibold  hero-text2"
-              style={{ opacity: 1, transform: "none", willChange: "auto" }}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.1 }}
             >
               Destra Cloud Services
-            </h4>
-            <p
+            </motion.h4>
+            <motion.p
               className="text-sm my-5 md:text-base text-[#FFF] max-w-[626px] leading-7 text-center mx-auto font-medium"
-              style={{ opacity: 1, transform: "none", willChange: "auto" }}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.2 }}
             >
               Democratizing the decentralized infrastructure services for Web3,
               backed by our L2 blockchain tailored for infra transactions.
-            </p>
+            </motion.p>
           </div>
           <div>
             <div className="hidden lg:block max-w-[1320px]  w-full justify-center items-center gap-8 ">
@@ -450,13 +502,12 @@ export function Products() {
                       aria-roledescription="slide"
                       className="min-w-0 shrink-0 grow-0 pl-4 basis-1/1 md:basis-1/2 lg:basis-1/3"
                     >
-                      <div
+                      <motion.div
                         className="flex flex-col  items-start  gap-y-8 box-grad p-5"
-                        style={{
-                          opacity: 1,
-                          transform: "none",
-                          willChange: "auto",
-                        }}
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.5, delay: 0.3 }}
                       >
                         <img
                           alt="alt"
@@ -468,13 +519,12 @@ export function Products() {
                           className="w-full"
                           src="/WebHosting.svg"
                         />
-                        <div
+                        <motion.div
                           className="px-2 flex  flex-col gap-y-2  items-start"
-                          style={{
-                            opacity: 1,
-                            transform: "none",
-                            willChange: "auto",
-                          }}
+                          initial={{ opacity: 0, y: 20 }}
+                          whileInView={{ opacity: 1, y: 0 }}
+                          viewport={{ once: true }}
+                          transition={{ duration: 0.5, delay: 0.4 }}
                         >
                           <h2 className="text-3xl font-semibold text-[#FCFCFC]">
                             <span className=" self-stretch text-white md:text-xl text-lg not-italic   font-semibold leading-8">
@@ -485,21 +535,20 @@ export function Products() {
                             decentralized web hosting, powered by Destra
                             Decentralized DNS.
                           </p>
-                        </div>
-                      </div>
+                        </motion.div>
+                      </motion.div>
                     </div>
                     <div
                       role="group"
                       aria-roledescription="slide"
                       className="min-w-0 shrink-0 grow-0 pl-4 basis-1/1 md:basis-1/2 lg:basis-1/3"
                     >
-                      <div
+                      <motion.div
                         className="flex flex-col  items-start  gap-y-8 box-grad p-5"
-                        style={{
-                          opacity: 1,
-                          transform: "none",
-                          willChange: "auto",
-                        }}
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.5, delay: 0.3 }}
                       >
                         <img
                           alt="alt"
@@ -511,13 +560,12 @@ export function Products() {
                           className="w-full"
                           src="/FileStorage.svg"
                         />
-                        <div
+                        <motion.div
                           className="px-2 flex  flex-col gap-y-2  items-start"
-                          style={{
-                            opacity: 1,
-                            transform: "none",
-                            willChange: "auto",
-                          }}
+                          initial={{ opacity: 0, y: 20 }}
+                          whileInView={{ opacity: 1, y: 0 }}
+                          viewport={{ once: true }}
+                          transition={{ duration: 0.5, delay: 0.4 }}
                         >
                           <h2 className="text-3xl font-semibold text-[#FCFCFC]">
                             <span className=" self-stretch text-white md:text-xl text-lg not-italic   font-semibold leading-8">
@@ -528,21 +576,20 @@ export function Products() {
                             Decentralized file storage network, with a
                             sustainable and viable reward mechanisms.
                           </p>
-                        </div>
-                      </div>
+                        </motion.div>
+                      </motion.div>
                     </div>
                     <div
                       role="group"
                       aria-roledescription="slide"
                       className="min-w-0 shrink-0 grow-0 pl-4 basis-1/1 md:basis-1/2 lg:basis-1/3"
                     >
-                      <div
+                      <motion.div
                         className="flex flex-col  items-start  gap-y-8 box-grad p-5"
-                        style={{
-                          opacity: 1,
-                          transform: "none",
-                          willChange: "auto",
-                        }}
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.5, delay: 0.3 }}
                       >
                         <img
                           alt="alt"
@@ -554,13 +601,12 @@ export function Products() {
                           className="w-full"
                           src="/NFTStorage.svg"
                         />
-                        <div
+                        <motion.div
                           className="px-2 flex  flex-col gap-y-2  items-start"
-                          style={{
-                            opacity: 1,
-                            transform: "none",
-                            willChange: "auto",
-                          }}
+                          initial={{ opacity: 0, y: 20 }}
+                          whileInView={{ opacity: 1, y: 0 }}
+                          viewport={{ once: true }}
+                          transition={{ duration: 0.5, delay: 0.4 }}
                         >
                           <h2 className="text-3xl font-semibold text-[#FCFCFC]">
                             <span className=" self-stretch text-white md:text-xl text-lg not-italic   font-semibold leading-8">
@@ -571,15 +617,21 @@ export function Products() {
                             A secure and decentralized storage solution for NFT
                             projects.
                           </p>
-                        </div>
-                      </div>
+                        </motion.div>
+                      </motion.div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
             <div className="lg:hidden flex flex-wrap justify-center  ">
-              <div className="w-full md:w-1/2 p-2 py-5">
+              <motion.div
+                className="w-full md:w-1/2 p-2 py-5"
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5 }}
+              >
                 <div className="flex flex-col items-center justify-center gap-y-10 box-grad p-6">
                   <img
                     alt="alt"
@@ -603,10 +655,13 @@ export function Products() {
                     </p>
                   </div>
                 </div>
-              </div>
-              <div
+              </motion.div>
+              <motion.div
                 className="w-full md:w-1/2 p-2 py-5"
-                // style={{ opacity: 1, transform: "none", willChange: "auto" }}
+                initial={{ opacity: 0, scale: 0.95 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.2 }}
               >
                 <div className="flex flex-col items-center justify-center gap-y-10 box-grad p-6">
                   <img
@@ -619,9 +674,12 @@ export function Products() {
                     className="w-full"
                     src="/FileStorage.svg"
                   />
-                  <div
+                  <motion.div
                     className="px-2 flex flex-col gap-y-2  items-start"
-                    // style={{ opacity: 0, transform: "translateY(50px)" }}
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5, delay: 0.3 }}
                   >
                     <h2 className="text-3xl text-[#FCFCFC] font-semibold">
                       <span className=" self-stretch text-white md:text-xl text-lg not-italic   font-semibold leading-8">
@@ -632,12 +690,15 @@ export function Products() {
                       Decentralized file storage network, with a sustainable and
                       viable reward mechanisms.
                     </p>
-                  </div>
+                  </motion.div>
                 </div>
-              </div>
-              <div
+              </motion.div>
+              <motion.div
                 className="w-full md:w-1/2 p-2 py-5"
-                // style={{ opacity: 0, transform: "translateY(120px)" }}
+                initial={{ opacity: 0, y: 120 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.2 }}
               >
                 <div className="flex flex-col items-center justify-center gap-y-10 box-grad p-6">
                   <img
@@ -650,9 +711,12 @@ export function Products() {
                     className="w-full"
                     src="/NFTStorage.svg"
                   />
-                  <div
+                  <motion.div
                     className="px-2 flex flex-col gap-y-2  items-start"
-                    // style={{ opacity: 0, transform: "translateY(50px)" }}
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5, delay: 0.3 }}
                   >
                     <h2 className="text-3xl text-[#FCFCFC] font-semibold">
                       <span className=" self-stretch text-white md:text-xl text-lg not-italic   font-semibold leading-8">
@@ -663,9 +727,9 @@ export function Products() {
                       A secure and decentralized storage solution for NFT
                       projects.
                     </p>
-                  </div>
+                  </motion.div>
                 </div>
-              </div>
+              </motion.div>
             </div>
           </div>
         </div>

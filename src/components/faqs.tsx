@@ -1,9 +1,12 @@
+"use client";
+
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { motion } from "framer-motion";
 
 const faqs = [
   {
@@ -38,22 +41,32 @@ export function FAQSection() {
   return (
     <div className="">
       <div className="flex max-w-[340px] md:max-w-screen-sm w-full flex-col items-center mx-auto py-10">
-        <div
+        <motion.div
           className="hero-text2 font-semibold md:text-5xl text-4xl text-center"
-          style={{ opacity: 1, transform: "none", willChange: "auto" }}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
         >
           FAQ
-        </div>
-        <p
+        </motion.div>
+        <motion.p
           className="self-stretch text-center text-white md:text-base text-sm font-normal mt-4"
-          style={{ opacity: 1, transform: "none", willChange: "auto" }}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.1 }}
         >
           For any other questions, feel welcome to reach out to the community
-        </p>
+        </motion.p>
       </div>
-      <div
-        className="w-full max-w-[370px] p-2.5 md:p-5 md:max-w-5xl mx-auto justify-start md:justify-center items-start text-white transition-all delay-500"
+      <motion.div
+        className="w-full max-w-[370px] p-2.5 md:p-5 md:max-w-5xl mx-auto justify-start md:justify-center items-start text-white transition-all"
         data-orientation="vertical"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5, delay: 0.2 }}
       >
         <Accordion type="single" collapsible className="w-full">
           {faqs.map((faq, index) => (
@@ -71,7 +84,7 @@ export function FAQSection() {
             </AccordionItem>
           ))}
         </Accordion>
-      </div>
+      </motion.div>
     </div>
   );
 }

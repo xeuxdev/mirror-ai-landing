@@ -1,11 +1,17 @@
+"use client";
+
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export function Footer() {
   return (
     <div className="bg-[#111111] text-white w-full max-w-screen-2xl mx-auto py-11 md:px-16 flex flex-col gap-y-5 md:gap-y-11">
-      <div
+      <motion.div
         className="w-full flex flex-col gap-y-6 md:flex-row items-center justify-between py-4"
-        style={{ opacity: 1, transform: "none", willChange: "auto" }}
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5 }}
       >
         <div className="w-[170px] h-[42px] relative">
           <Image
@@ -90,14 +96,20 @@ export function Footer() {
             />
           </a>
         </div>
-      </div>
-      <hr
+      </motion.div>
+      <motion.hr
         className="border-[#A3A3A3] mx-10 md:mx-0"
-        style={{ opacity: 1, transform: "none", willChange: "auto" }}
+        initial={{ opacity: 0, scaleX: 0 }}
+        whileInView={{ opacity: 1, scaleX: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5, delay: 0.1 }}
       />
-      <div
+      <motion.div
         className="flex flex-col md:flex-row gap-y-4 text-xs md:text-base items-center justify-between text-[#A3A3A3] capitalize"
-        style={{ opacity: 1, willChange: "auto", transform: "none" }}
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5, delay: 0.2 }}
       >
         <p>Destra Network @2024 all rights reserved</p>
         <div className="relative">
@@ -113,7 +125,7 @@ export function Footer() {
             privacy policy
           </a>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }

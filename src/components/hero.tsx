@@ -48,7 +48,7 @@ export function HeroSection() {
               decentralized computing
             </h2>
           </div>
-          <div className="md:hidden text-5xl md:text-6xl font-semibold md:text-center  gap-y-2 flex flex-col leading-[1.375]">
+          <div className="md:hidden text-5xl md:text-6xl font-semibold md:text-center  gap-y-2 flex flex-col leading-snug">
             <h2 className="flex flex-col items-center text-[#FFF] self-stretch animate-fade-in-up delay-100">
               Empowering<span className="header-text">the next-gen </span>
               <span className="hero-text1 ">AI with </span>
