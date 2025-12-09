@@ -4,6 +4,21 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 
+const navLinks = [
+  {
+    name: "About",
+    href: "#about",
+  },
+  {
+    name: "Docs",
+    href: "",
+  },
+  {
+    name: "Products",
+    href: "#products",
+  },
+];
+
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -38,50 +53,19 @@ export function Navbar() {
             />
           </Link>
           <div className="hidden sm:flex items-center gap-6">
-            <div className="text-[#D4D4D4] text-base font-bold">
-              <a
-                target="_blank"
-                href="https://destra-network.gitbook.io/documentation"
+            {navLinks.map((link) => (
+              <div
+                className="text-[#D4D4D4] text-base font-bold"
+                key={link.href}
               >
-                Docs
-              </a>
-            </div>
-            <div className="text-[#D4D4D4] text-base font-bold">
-              <a target="_blank" href="https://destranetwork.io/">
-                Products
-              </a>
-            </div>
-            <div className="text-[#D4D4D4] text-base font-bold">
-              <a target="_blank" href="https://ocai.destranetwork.io/">
-                Deploy AI
-              </a>
-            </div>
-            <div className="text-[#D4D4D4] text-base font-bold">
-              <a target="_blank" href="https://destranetwork.io/gpu-node">
-                GPU Network
-              </a>
-            </div>
-            <div className="relative cursor-pointer text-[#D4D4D4] text-base font-bold flex gap-0.5 items-center">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="lucide lucide-copy w-4 h-4"
-              >
-                <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
-                <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
-              </svg>
-              Contract Address
-            </div>
+                <a target="_blank" href={link.href}>
+                  {link.name}
+                </a>
+              </div>
+            ))}
           </div>
           <div className="flex gap-x-3">
-            <div className="flex items-center p-1.5 px-2.5 rounded-lg">
+            {/* <div className="flex items-center p-1.5 px-2.5 rounded-lg">
               <a
                 className="flex items-center"
                 href="mailto:contact@destra.network"
@@ -102,9 +86,9 @@ export function Navbar() {
                   <path d="m22 10-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 10"></path>
                 </svg>
               </a>
-            </div>
-            <div className=" flex items-center p-1.5 px-2.5 rounded-lg">
-              <a target="_blank" href="https://t.me/destranetwork">
+            </div> */}
+            <div className="flex items-center p-1.5 rounded-lg">
+              <a target="_blank" href="">
                 <Image
                   alt="alt"
                   width={100}
@@ -112,6 +96,21 @@ export function Navbar() {
                   className="size-6"
                   src="/telegram.svg"
                 />
+              </a>
+            </div>
+            <div className="flex items-center p-1.5 rounded-lg bg-white">
+              <a target="_blank" href="">
+                <svg
+                  viewBox="0 0 33 33"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="size-6"
+                >
+                  <path
+                    d="M18.6127 15.4117L24.8363 8.2407L23.3539 8.24734L17.9499 14.4738L13.5838 8.29108L8.58008 8.31348L15.1825 17.6628L8.6556 25.1827L10.1381 25.176L15.8448 18.6007L20.4557 25.1298L25.4595 25.1074L18.6123 15.4117L18.6127 15.4117ZM16.5926 17.7391L15.9237 16.8082L10.6016 9.40067L12.8786 9.39048L17.1736 15.3686L17.8425 16.2995L23.4255 24.0701L21.1485 24.0803L16.5926 17.7395L16.5926 17.7391Z"
+                    fill="black"
+                  />
+                </svg>
               </a>
             </div>
           </div>
@@ -147,53 +146,21 @@ export function Navbar() {
           </Link>
         </div>
         <div className="flex gap-x-6 text-lg font-bold">
-          <div className="animate-fade-in-up delay-100">
-            <a
-              target="_blank"
-              className="text-red-500"
-              href="https://destra-network.gitbook.io/documentation"
-            >
-              Docs
-            </a>
-          </div>
-          <div className="animate-fade-in-up delay-150">
-            <a target="_blank" href="https://destranetwork.io/">
-              Projects
-            </a>
-          </div>
-          <div className="animate-fade-in-up delay-200">
-            <a target="_blank" href="https://ocai.destranetwork.io/">
-              Deploy AI
-            </a>
-          </div>
-          <div className="animate-fade-in-up delay-300">
-            <a target="_blank" href="https://destranetwork.io/gpu-node">
-              GPU Network
-            </a>
-          </div>
-          <div className="animate-fade-in-up delay-500">
-            <div className="relative cursor-pointer flex gap-1">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="lucide lucide-copy w-5 h-5"
+          {navLinks.map((link) => (
+            <div className="animate-fade-in-up delay-100" key={link.href}>
+              <a
+                target="_blank"
+                className="hover:text-red-500 active:text-red-500"
+                href={link.href}
               >
-                <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
-                <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
-              </svg>
-              Contract Address
+                {link.name}
+              </a>
             </div>
-          </div>
+          ))}
         </div>
+
         <div className="flex gap-x-3 animate-fade-in-up delay-700">
-          <div className=" flex items-center justify-end gap-1 py-1 px-3 rounded-[16px] bg-white">
+          {/* <div className=" flex items-center justify-end gap-1 py-1 px-3 rounded-[16px] bg-white">
             <a
               target="_blank"
               className="flex gap-0.5 items-center"
@@ -210,9 +177,9 @@ export function Navbar() {
                 Contact Us
               </span>
             </a>
-          </div>
+          </div> */}
           <div className=" flex items-center gap-1 rounded-[16px] justify-end p-2 bg-white">
-            <a target="_blank" href="https://t.me/destranetwork">
+            <a target="_blank" href="">
               <Image
                 alt="alt"
                 width={100}
@@ -220,6 +187,21 @@ export function Navbar() {
                 className="size-6"
                 src="/telegramnav.svg"
               />
+            </a>
+          </div>
+          <div className=" flex items-center gap-1 rounded-[16px] justify-end p-2 bg-white">
+            <a target="_blank" href="">
+              <svg
+                viewBox="0 0 33 33"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                className="size-6"
+              >
+                <path
+                  d="M18.6127 15.4117L24.8363 8.2407L23.3539 8.24734L17.9499 14.4738L13.5838 8.29108L8.58008 8.31348L15.1825 17.6628L8.6556 25.1827L10.1381 25.176L15.8448 18.6007L20.4557 25.1298L25.4595 25.1074L18.6123 15.4117L18.6127 15.4117ZM16.5926 17.7391L15.9237 16.8082L10.6016 9.40067L12.8786 9.39048L17.1736 15.3686L17.8425 16.2995L23.4255 24.0701L21.1485 24.0803L16.5926 17.7395L16.5926 17.7391Z"
+                  fill="black"
+                />
+              </svg>
             </a>
           </div>
         </div>
@@ -276,19 +258,16 @@ export function Navbar() {
         <div className="fixed inset-0 bg-black text-white flex flex-col items-center justify-center z-40">
           <div className="w-full max-w-screen-sm px-4 flex flex-col items-center justify-center text-center">
             <div className="flex flex-col gap-y-6 text-2xl font-bold">
-              <a
-                className="text-red-500"
-                href="https://destra-network.gitbook.io/documentation"
-              >
-                DOCS
-              </a>
-              <a href="https://destranetwork.io/">PROJECTS</a>
-              <a target="_blank" href="https://ocai.destranetwork.io/">
-                DEPLOY AI
-              </a>
-              <a target="_blank" href="https://destranetwork.io/gpu-node">
-                GPU NETWORK
-              </a>
+              {navLinks.map((link) => (
+                <a
+                  key={link.name}
+                  href={link.href}
+                  target={link.href.startsWith("http") ? "_blank" : "_self"}
+                  className="uppercase"
+                >
+                  {link.name}
+                </a>
+              ))}
             </div>
             <div className="flex flex-col items-center gap-y-4 my-6">
               <div className="text-sm flex flex-col items-center gap-y-2 text-[#A3A3A3]">
@@ -301,11 +280,7 @@ export function Navbar() {
               </div>
               <p className="text-lg font-medium">FOLLOW US</p>
               <div className="flex items-center gap-x-3">
-                <a
-                  href="https://x.com/destranetwork"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href="" target="_blank" rel="noopener noreferrer">
                   <Image
                     alt="x"
                     width={24}
@@ -314,11 +289,7 @@ export function Navbar() {
                     src="/socials/x.svg"
                   />
                 </a>
-                <a
-                  href="https://medium.com/@destranetwork"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href="" target="_blank" rel="noopener noreferrer">
                   <Image
                     alt="Medium"
                     width={24}
@@ -327,11 +298,7 @@ export function Navbar() {
                     src="/socials/Medium.svg"
                   />
                 </a>
-                <a
-                  href="https://t.me/DestraNetwork"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href="" target="_blank" rel="noopener noreferrer">
                   <Image
                     alt="tg"
                     width={24}

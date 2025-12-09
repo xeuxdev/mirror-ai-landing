@@ -131,10 +131,7 @@ export function TeamSection() {
             </div>
           </motion.div>
         </div>
-        <a
-          target="_blank"
-          href="https://assuredefi.com/projects/destra-network/"
-        >
+        <a target="_blank" href="">
           <motion.button
             className="text-[#FF3838] md:text-lg text-base font-normal flex items-center  py-3.5 px-8 justify-center gap-2.5 shrink-0 rounded-3xl border border-[#FF3838] bg-white mt-10"
             initial={{ opacity: 0, y: 20 }}
@@ -263,7 +260,7 @@ export function TeamSection() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.1 }}
             >
-              Destra Subnets
+              Echo Subnets
             </motion.div>
             <motion.p
               className="text-[#171717] self-stretch text-center text-sm not-italic leading-[24px] font-normal text-balance"
@@ -301,7 +298,7 @@ export function TeamSection() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.5 }}
             >
-              A tailored L3 blockchain for enterprises, powered by Destra AI.
+              A tailored L3 blockchain for enterprises, powered by Echo AI.
             </motion.div>
             <motion.div
               className="ml-2"

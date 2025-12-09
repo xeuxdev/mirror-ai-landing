@@ -6,7 +6,7 @@ export function HeroSection() {
     <section className="flex flex-col items-center justify-center relative max-w-screen-2xl w-11/12 mx-auto mt-4 sm:mt-4">
       <div>
         <div className="animate-fade-in-up">
-          <a target="_blank" href="https://stake.destranetwork.io/">
+          <a target="_blank" href="">
             <div className="z-10 flex min-h-8 items-center justify-center">
               <div className="group rounded-full border border-[#404040] bg-[#171717] text-base text-[#D4D4D4] transition-all ease-in hover:cursor-pointer hover:bg-neutral-200 dark:border-white/5 dark:bg-neutral-900 dark:hover:bg-neutral-800">
                 <p
@@ -43,37 +43,34 @@ export function HeroSection() {
         </div>
         <div className="flex flex-col md:items-center items-center justify-center gap-y-8 p-4 mt-4 pb-4">
           <div className="hidden font-latom  text-4xl md:text-6xl font-semibold md:text-center hero-text1 gap-y-5 md:flex flex-col leading-none animate-fade-in-up delay-100">
-            <h2>Empowering the next-gen AI with</h2>
+            <h2>AI-Driven Autonomous Trading for the</h2>
             <h2 className="text-3xl md:text-5xl hero-text2">
-              decentralized computing
+              Decentralized Markets
             </h2>
           </div>
           <div className="md:hidden text-5xl md:text-6xl font-semibold md:text-center  gap-y-2 flex flex-col leading-snug">
             <h2 className="flex flex-col items-center text-[#FFF] self-stretch animate-fade-in-up delay-100">
-              Empowering<span className="header-text">the next-gen </span>
-              <span className="hero-text1 ">AI with </span>
+              AI-Driven
+              <span className="header-text text-center">
+                Autonomous Trading{" "}
+              </span>
+              <span className="hero-text1 ">for the </span>
             </h2>
             <h2 className="text-5xl md:text-5xl hero-text2 flex items-center flex-col animate-fade-in-up delay-100">
-              decentralized<span className="hero-text3">computing </span>
+              Decentralized<span className="hero-text3">Markets </span>
             </h2>
           </div>
           <p className="text-[#D4D4D4] font-normal md:text-lg text-sm items-center text-center md:text-center md:max-w-[984px]  leading-relaxed animate-fade-in-up delay-200">
-            Destra Network pioneers true Decentralized computing solutions for
-            the emerging AI economy. Our comprehensive suite of offerings is
-            designed to immerse web3 enthusiasts in authentic decentralized AI
-            <span className="inline md:hidden">.</span>
-            <span className="hidden md:inline">
-              , leveraging the robust Destra GPU network and cloud solutions.
-            </span>
+            Echo AI connects directly to decentralized markets, enabling
+            automated strategy deployment, real-time trade mirroring, and
+            protocol-native yield generation. Built as an evolving AI ecosystem,
+            Echo AI adapts to volatility, identifies opportunities, and routes
+            capital across DeFi in real-time.
           </p>
           <div className="flex gap-1">
-            <a
-              target="_blank"
-              className="justify-center"
-              href="https://destranetwork.io/"
-            >
+            <a target="_blank" className="justify-center" href="">
               <button className="inline-flex py-3.5 px-8 justify-center items-center gap-2.5 rounded-3xl bg-[#FF3838] text-white text-lg font-bold not-italic leading-normal animate-fade-in-up delay-300">
-                Deploy Now
+                Start Now
               </button>
             </a>
           </div>

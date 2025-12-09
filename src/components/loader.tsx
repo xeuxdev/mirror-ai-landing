@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 export function Loader({ children }: { children: React.ReactNode }) {
   const [mounted, setMounted] = useState(false);
   const [showContent, setShowContent] = useState(false);
-  const text = "Destra Network";
+  const text = "Echo AI";
 
   useEffect(() => {
     const timer = setTimeout(() => {

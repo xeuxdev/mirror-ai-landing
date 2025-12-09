@@ -31,7 +31,7 @@ export function Products() {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.1 }}
         >
-          Unleash the power of one click AI
+          Unlock autonomous trading with intelligent on-chain execution
         </motion.div>
       </div>
 
@@ -65,11 +65,11 @@ export function Products() {
                 transition={{ duration: 0.5, delay: 0.3 }}
               >
                 <h6 className="text-[#FCFCFC]  md:text-xl not-italic leading-8 font-semibold">
-                  Immerse in AI/LLM Training
+                  Adaptive Strategy Engine
                 </h6>
                 <p className="text-[#D4D4D4] text-sm not-italic font-normal leading-5">
-                  Unlock the full potential of AI with our advanced training
-                  platforms.
+                  Execute AI-driven trading strategies that learn from market
+                  volatility, liquidity depth, and trader behavior in real time.
                 </p>
               </motion.div>
             </motion.div>
@@ -98,11 +98,11 @@ export function Products() {
                 transition={{ duration: 0.5, delay: 0.3 }}
               >
                 <h6 className="text-[#FCFCFC]  md:text-xl not-italic leading-8 font-semibold">
-                  Destra Exclusive AI Models
+                  Smart Money Mirroring
                 </h6>
                 <p className="text-[#D4D4D4] text-sm not-italic font-normal leading-5">
-                  Harness the power of AI with our proprietary, cutting-edge
-                  models.
+                  Track and replicate winning traders, whale flows, and
+                  high-performance wallets across decentralized markets.
                 </p>
               </motion.div>
             </motion.div>
@@ -131,11 +131,11 @@ export function Products() {
                 transition={{ duration: 0.5, delay: 0.3 }}
               >
                 <h6 className="text-[#FCFCFC]  md:text-xl not-italic leading-8 font-semibold">
-                  One-Click AI Deployment
+                  One-Click Deployment
                 </h6>
                 <p className="text-[#D4D4D4] text-sm not-italic font-normal leading-5">
-                  Deploy AI solutions effortlessly with our intuitive one-click
-                  system.
+                  Activate strategies instantly with no manual setup,
+                  configuration, or trading complexity required.
                 </p>
               </motion.div>
             </motion.div>
@@ -154,11 +154,12 @@ export function Products() {
                 transition={{ duration: 0.5, delay: 0.3 }}
               >
                 <h6 className="text-[#FCFCFC]  md:text-xl not-italic leading-8 font-semibold">
-                  D- Rigs
+                  AI-Managed Vaults
                 </h6>
                 <p className="text-[#D4D4D4] text-sm not-italic font-normal leading-5 md:w-1/2">
-                  Enhance performance and efficiency using our innovative
-                  D-Rings.
+                  Diversify across multiple trading approaches, risk profiles,
+                  and perpetuals strategies—all automated and continuously
+                  optimized.
                 </p>
               </motion.div>
               <div className="w-full md:h-72">
@@ -189,10 +190,11 @@ export function Products() {
                 transition={{ duration: 0.5, delay: 0.3 }}
               >
                 <h6 className="text-[#FCFCFC]  md:text-xl not-italic leading-8 font-semibold">
-                  Destra Nodes
+                  Live Performance Intelligence
                 </h6>
                 <p className="text-[#D4D4D4] text-sm not-italic font-normal leading-5 md:w-1/2">
-                  Live Stats GPU Nodes across Destra Network.
+                  Monitor returns, execution metrics, and strategy behavior with
+                  on-chain transparency and real-time data visualization.
                 </p>
               </motion.div>
               <div className="w-full md:h-72">
@@ -215,7 +217,7 @@ export function Products() {
                     xmlns="http://www.w3.org/2000/svg"
                     className="nodessvg pb-2 w-full h-fit"
                   >
-                    <g id="Destra">
+                    <g id="Echo">
                       <g id="Group 106">
                         <g id="Vector">
                           <path
@@ -472,7 +474,7 @@ export function Products() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.1 }}
             >
-              Destra Cloud Services
+              Infrastructure Services Layer
             </motion.h4>
             <motion.p
               className="text-sm my-5 md:text-base text-[#FFF] max-w-[626px] leading-7 text-center mx-auto font-medium"
@@ -481,8 +483,8 @@ export function Products() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              Democratizing the decentralized infrastructure services for Web3,
-              backed by our L2 blockchain tailored for infra transactions.
+              Enabling automation, data intelligence, and extensibility for
+              AI-powered trading.
             </motion.p>
           </div>
           <div>
@@ -528,12 +530,13 @@ export function Products() {
                         >
                           <h2 className="text-3xl font-semibold text-[#FCFCFC]">
                             <span className=" self-stretch text-white md:text-xl text-lg not-italic   font-semibold leading-8">
-                              Web Hosting
+                              Automation & Scheduling
                             </span>
                           </h2>
                           <p className=" text-[#D4D4D4]  text-sm font-normal leading-5 lowercase  items-start self-start ">
-                            decentralized web hosting, powered by Destra
-                            Decentralized DNS.
+                            Schedule model updates, rebalance trading vaults,
+                            trigger execution logic, and automate workflows
+                            fully on-chain and event-driven.
                           </p>
                         </motion.div>
                       </motion.div>
@@ -568,13 +571,14 @@ export function Products() {
                           transition={{ duration: 0.5, delay: 0.4 }}
                         >
                           <h2 className="text-3xl font-semibold text-[#FCFCFC]">
-                            <span className=" self-stretch text-white md:text-xl text-lg not-italic   font-semibold leading-8">
-                              File Storage
+                            <span className=" self-stretch text-white md:text-xl text-lg not-italic font-semibold leading-8">
+                              Data & Oracle Integration
                             </span>
                           </h2>
                           <p className=" text-[#D4D4D4]  text-sm font-normal leading-5 lowercase  items-start self-start ">
-                            Decentralized file storage network, with a
-                            sustainable and viable reward mechanisms.
+                            Access aggregated real-time feeds including price
+                            oracles, liquidity maps, funding rates, and on-chain
+                            behavioral signals normalized for AI use.
                           </p>
                         </motion.div>
                       </motion.div>
@@ -609,13 +613,15 @@ export function Products() {
                           transition={{ duration: 0.5, delay: 0.4 }}
                         >
                           <h2 className="text-3xl font-semibold text-[#FCFCFC]">
-                            <span className=" self-stretch text-white md:text-xl text-lg not-italic   font-semibold leading-8">
-                              NFT Storage
+                            <span className=" self-stretch text-white md:text-xl text-lg not-italic font-semibold leading-8">
+                              Developer & Protocol Tooling
                             </span>
                           </h2>
                           <p className=" text-[#D4D4D4]  text-sm font-normal leading-5 lowercase  items-start self-start ">
-                            A secure and decentralized storage solution for NFT
-                            projects.
+                            Build, customize, and extend AI-powered trading
+                            modules with SDKs, templates, and seamless
+                            integrations across decentralized execution
+                            environments.
                           </p>
                         </motion.div>
                       </motion.div>
@@ -645,13 +651,14 @@ export function Products() {
                   />
                   <div className="px-2 flex flex-col gap-y-2  items-start">
                     <h2 className="text-3xl text-[#FCFCFC] font-semibold">
-                      <span className=" self-stretch text-white md:text-xl text-lg not-italic   font-semibold leading-8">
-                        Web Hosting
+                      <span className=" self-stretch text-white md:text-xl text-lg not-italic font-semibold leading-8">
+                        Automation & Scheduling
                       </span>
                     </h2>
                     <p className="text-base text-[#D4D4D4] items-start  ">
-                      decentralized web hosting, powered by Destra Decentralized
-                      DNS.
+                      Schedule model updates, rebalance trading vaults, trigger
+                      execution logic, and automate workflows fully on-chain and
+                      event-driven.
                     </p>
                   </div>
                 </div>
@@ -683,12 +690,13 @@ export function Products() {
                   >
                     <h2 className="text-3xl text-[#FCFCFC] font-semibold">
                       <span className=" self-stretch text-white md:text-xl text-lg not-italic   font-semibold leading-8">
-                        File Storage
+                        Data & Oracle Integration
                       </span>
                     </h2>
                     <p className="text-base text-[#D4D4D4] items-start  ">
-                      Decentralized file storage network, with a sustainable and
-                      viable reward mechanisms.
+                      Access aggregated real-time feeds including price oracles,
+                      liquidity maps, funding rates, and on-chain behavioral
+                      signals normalized for AI use.
                     </p>
                   </motion.div>
                 </div>
@@ -720,12 +728,13 @@ export function Products() {
                   >
                     <h2 className="text-3xl text-[#FCFCFC] font-semibold">
                       <span className=" self-stretch text-white md:text-xl text-lg not-italic   font-semibold leading-8">
-                        NFT Storage
+                        Developer & Protocol Tooling
                       </span>
                     </h2>
                     <p className="text-base text-[#D4D4D4] items-start  ">
-                      A secure and decentralized storage solution for NFT
-                      projects.
+                      Build, customize, and extend AI-powered trading modules
+                      with SDKs, templates, and seamless integrations across
+                      decentralized execution environments.
                     </p>
                   </motion.div>
                 </div>

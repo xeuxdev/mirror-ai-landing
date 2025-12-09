@@ -10,30 +10,29 @@ import { motion } from "framer-motion";
 
 const faqs = [
   {
-    question: "What is DSync and how does it contribute to decentralization?",
+    question: "What makes Echo AI different from other AI trading tools?",
     answer:
-      "DSync is a decentralized synchronization protocol that ensures data consistency across distributed nodes without relying on a central authority. It contributes to decentralization by enabling peer-to-peer data replication and verification.",
+      "Echo AI combines real-time market intelligence, adaptive strategy automation, and on-chain execution—meaning trades aren’t just predicted, they’re executed autonomously, transparently, and without relying on centralized systems.",
   },
   {
-    question: "How can users access websites hosted on Destra Network?",
+    question: "Do I need trading experience to use Echo AI?",
     answer:
-      "Users can access websites hosted on Destra Network through standard web browsers using Destra's decentralized DNS resolvers or via specific gateways that bridge the decentralized network with the traditional web.",
+      "Not at all. Echo AI is designed for both beginners and experienced traders. Users can deploy pre-built strategies, mirror high-performance wallets, or enable AI-managed vaults—no manual configuration required.",
   },
   {
-    question:
-      "What is Destra's Decentralized DNS and how does it enhance privacy?",
+    question: "How does on-chain execution work?",
     answer:
-      "Destra's Decentralized DNS is a domain name system that operates on a blockchain, removing the need for central registrars. It enhances privacy by preventing censorship, domain seizures, and tracking of user queries by centralized entities.",
+      "Once activated, the AI monitors markets, identifies opportunities, and executes trades directly on supported decentralized exchanges. All actions remain transparent, verifiable, and under the user’s wallet custody.",
   },
   {
-    question: "What is Proof of Sync consensus and how does it work?",
+    question: "Are my funds safe? Who controls custody?",
     answer:
-      "Proof of Sync is a consensus mechanism used by Destra Network to validate data synchronization between nodes. It rewards nodes for accurately and timely syncing data, ensuring the network remains consistent and reliable.",
+      "Users retain 100% self-custody. Echo AI doesn’t hold funds, seed phrases, or private keys. The AI interacts only through permissioned smart contracts that users approve and can revoke at any time.",
   },
   {
-    question: "How does Destra Network prioritize user privacy?",
+    question: "Can I customize or build my own strategy?",
     answer:
-      "Destra Network prioritizes user privacy by encrypting data in transit and at rest, using decentralized identifiers, and minimizing data collection. The architecture ensures that users retain control over their personal information.",
+      "Yes. Advanced users can modify parameters, integrate external data sources, or build custom strategies through the strategy builder and automation engine—without writing code.",
   },
 ];
 
