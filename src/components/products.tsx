@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 export function Products() {
   return (
     <>
-      <div>
+      <section id="products">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -33,7 +33,7 @@ export function Products() {
         >
           Unlock autonomous trading with intelligent on-chain execution
         </motion.div>
-      </div>
+      </section>
 
       <div className="relative flex flex-col max-w-screen-2xl mx-auto w-11/12 items-center justify-center overflow-hidden bg-black ">
         {/* ai */}

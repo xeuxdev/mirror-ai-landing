@@ -17,6 +17,10 @@ const navLinks = [
     name: "Products",
     href: "#products",
   },
+  {
+    name: "FAQs",
+    href: "#faqs",
+  },
 ];
 
 export function Navbar() {
@@ -58,13 +62,11 @@ export function Navbar() {
                 className="text-[#D4D4D4] text-base font-bold"
                 key={link.href}
               >
-                <a target="_blank" href={link.href}>
-                  {link.name}
-                </a>
+                <a href={link.href}>{link.name}</a>
               </div>
             ))}
           </div>
-          <div className="flex gap-x-3">
+          <div className="flex items-center">
             {/* <div className="flex items-center p-1.5 px-2.5 rounded-lg">
               <a
                 className="flex items-center"
@@ -98,13 +100,13 @@ export function Navbar() {
                 />
               </a>
             </div>
-            <div className="flex items-center p-1.5 rounded-lg bg-white">
+            <div className="flex items-center p-1.5 rounded-lg">
               <a target="_blank" href="">
                 <svg
                   viewBox="0 0 33 33"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
-                  className="size-6"
+                  className="size-6 bg-white rounded-full"
                 >
                   <path
                     d="M18.6127 15.4117L24.8363 8.2407L23.3539 8.24734L17.9499 14.4738L13.5838 8.29108L8.58008 8.31348L15.1825 17.6628L8.6556 25.1827L10.1381 25.176L15.8448 18.6007L20.4557 25.1298L25.4595 25.1074L18.6123 15.4117L18.6127 15.4117ZM16.5926 17.7391L15.9237 16.8082L10.6016 9.40067L12.8786 9.39048L17.1736 15.3686L17.8425 16.2995L23.4255 24.0701L21.1485 24.0803L16.5926 17.7395L16.5926 17.7391Z"
@@ -149,7 +151,7 @@ export function Navbar() {
           {navLinks.map((link) => (
             <div className="animate-fade-in-up delay-100" key={link.href}>
               <a
-                target="_blank"
+                // target="_blank"
                 className="hover:text-red-500 active:text-red-500"
                 href={link.href}
               >

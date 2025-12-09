@@ -38,7 +38,7 @@ const faqs = [
 
 export function FAQSection() {
   return (
-    <div className="">
+    <section id="faqs">
       <div className="flex max-w-[340px] md:max-w-screen-sm w-full flex-col items-center mx-auto py-10">
         <motion.div
           className="hero-text2 font-semibold md:text-5xl text-4xl text-center"
@@ -84,6 +84,6 @@ export function FAQSection() {
           ))}
         </Accordion>
       </motion.div>
-    </div>
+    </section>
   );
 }

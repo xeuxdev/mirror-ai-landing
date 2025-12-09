@@ -5,7 +5,10 @@ import { motion } from "framer-motion";
 
 export function TeamSection() {
   return (
-    <div className="flex flex-col w-full items-center py-10 md:max-w-screen-2xl mx-auto bg-white  ">
+    <section
+      id="team"
+      className="flex flex-col w-full items-center py-10 md:max-w-screen-2xl mx-auto bg-white  "
+    >
       <div className="flex flex-col w-full items-center py-10 md:max-w-screen-2xl mx-auto bg-white box-grid1">
         <div className="flex flex-col items-center text-center">
           <div className="flex items-center text-center gap-x-4">
@@ -324,6 +327,6 @@ export function TeamSection() {
           />
         </motion.div>
       </div>
-    </div>
+    </section>
   );
 }
